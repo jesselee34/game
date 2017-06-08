@@ -8,11 +8,7 @@
     "mocha": true,
   },
   "rules": {
-    "no-underscore-dangle": [
-      "error", {
-        "allow": ["__STATE__"],
-      },
-    ],
+    "no-underscore-dangle": [0],
     "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }],
     "react/prop-types": [0],
     "comma-dangle": [1, "always-multiline"],

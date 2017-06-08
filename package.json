@@ -9,9 +9,9 @@
     "prestart": "npm run build",
     "build": "cross-env NODE_ENV=production webpack -p --progress",
     "prebuild": "mkdirp build && ncp src/assets build/assets",
-    "test": "npm run -s lint && tape -r babel-register src/**/*spec.js src/**/*spec.js | tap-summary",
-    "test:watch": "npm run -s test -- --watch",
-    "lint": "eslint src test"
+    "test": "tape -r babel-register src/**/*spec.js src/**/*spec.js | tap-summary",
+    "test:watch": "tape-watch src/**/*spec.js -p 'tap-summary' -c -r babel-register",
+    "lint": "eslint src/**/*.js"
   },
   "keywords": [
     "preact",
