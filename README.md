@@ -1,18 +1,52 @@
-# Preact Boilerplate / Starter Kit
+# Game
+
+## Description:
+Game is a live action strategy board game where two players place various pieces on a grid in an attempt to distroy the opposing player's targets.
+
+## Pieces
+
+*Triangle*
+
+Triangle shoots in a straight line toward the opposing players side.
+
+*Square*
+
+Square acts as a barricade and is dificult to destroy.
+
+*Hexagon*
+
+Hexagon shoots in a single direction but can be rotated.
+
+*Circle*
+
+Circle emits strong bursts of proximity damage. Anything within range will be easily destroyed.
+
+## Mana
+
+Every piece will cost mana to place. It will cost a different amount of mana to place each piece.
+Each player begins a match with a given amount of mana. Mana is earned by destroying the opponents pieces and targets.
+
+## Upgrades
+
+Every piece can be upgraded three times. Upgrades cost mana. Each level of upgrade will cost an increasing amount of mana.
+Upgrades increase the effectiveness of each piece. For shooting pieces, the frequency, speed, and power of the projectile
+is increased with each upgrade.
+
+For the *Square* piece, the total HP is increased with each upgrade. Each time a square is upgraded it's HP is restored to the maximum
+HP designated to the given upgrade level.
+
+For the *Circle* piece, each upgrade increases the radius or the power of the proximity burst.
+
+## Winning
+
+The first player to destroy the opposing player's targets will win the match.
+
+# Development
+
+## Forked From Preact Boilerplate / Starter Kit
 
 [![Build Status](https://travis-ci.org/developit/preact-boilerplate.svg?branch=master)](https://travis-ci.org/developit/preact-boilerplate)
 [![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/developit/preact)
-
-> :guitar: Ready-to-rock [Preact] starter project, powered by [webpack].
->
-> :rocket: If you're starting a new project using [Preact], you've come to the right place.
-Below is a step-by-step guide that takes you straight from downloading this boilerplate to production.
->
-> **[:boom: View Demo :boom:](https://preact-boilerplate.surge.sh)**
-
-
----
-
 
 # Quick-Start Guide
 
@@ -26,24 +60,7 @@ Below is a step-by-step guide that takes you straight from downloading this boil
 
 ## Installation
 
-**1. Clone this repo:**
-
-```sh
-git clone --depth 1 https://github.com/developit/preact-boilerplate.git my-app
-cd my-app
-```
-
-
-**2. Make it your own:**
-
-```sh
-rm -rf .git && git init && npm init
-```
-
-> :information_source: This re-initializes the repo and sets up your NPM project.
-
-
-**3. Install the dependencies:**
+**1. Install the dependencies:**
 
 ```sh
 npm install
@@ -56,7 +73,7 @@ npm install
 ## Development Workflow
 
 
-**4. Start a live-reload development server:**
+**2. Start a live-reload development server:**
 
 ```sh
 npm run dev
@@ -64,7 +81,7 @@ npm run dev
 
 > This is a full web server nicely suited to your project. Any time you make changes within the `src` directory, it will rebuild and even refresh your browser.
 
-**5. Testing with `mocha`, `karma`, `chai`, `sinon` via `phantomjs`:**
+**3. Testing with tape:**
 
 ```sh
 npm test
@@ -72,7 +89,7 @@ npm test
 
 > 🌟 This also instruments the code in `src/` using [isparta](https://github.com/douglasduteil/isparta), giving you pretty code coverage statistics at the end of your tests! If you want to see detailed coverage information, a full HTML report is placed into `coverage/`.
 
-**6. Generate a production build in `./build`:**
+**4. Generate a production build in `./build`:**
 
 ```sh
 npm run build
@@ -98,25 +115,6 @@ npm start
 
 
 ---
-
-
-## Structure
-
-Apps are built up from simple units of functionality called Components. A Component is responsible for rendering a small part of an application, given some input data called `props`, generally passed in as attributes in JSX. A component can be as simple as:
-
-```js
-class Link extends Component {
-  render({ to, children }) {
-    return <a href={ to }>{ children }</a>;
-  }
-}
-// usage:
-<Link to="/">Home</Link>
-```
-
-
----
-
 
 ## CSS Modules
 
