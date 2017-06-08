@@ -6,15 +6,19 @@ Game is a live action strategy board game where two players place various pieces
 ## Pieces
 
 *Triangle*
+
 Triangle shoots in a straight line toward the opposing players side.
 
 *Square*
+
 Square acts as a barricade and is dificult to destroy.
 
 *Hexagon*
+
 Hexagon shoots in a single direction but can be rotated.
 
 *Circle*
+
 Circle emits strong bursts of proximity damage. Anything within range will be easily destroyed.
 
 ## Mana
