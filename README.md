@@ -45,14 +45,10 @@ The first player to destroy the opposing player's targets will win the match.
 
 ## Forked From Preact Boilerplate / Starter Kit
 
-[![Build Status](https://travis-ci.org/developit/preact-boilerplate.svg?branch=master)](https://travis-ci.org/developit/preact-boilerplate)
-[![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/developit/preact)
-
 # Quick-Start Guide
 
 - [Installation](#installation)
 - [Development Workflow](#development-workflow)
-- [Structure](#structure)
 - [CSS Modules](#css-modules)
 - [Handling URLS](#handling-urls)
 - [React Compatibility](#react-compatibility)
