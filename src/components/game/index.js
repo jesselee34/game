@@ -1,10 +1,11 @@
 /** @jsx h */
 import { h } from 'preact';
+import Circle from '../circle';
 import style from './style.less';
 
 const Game = () => (
   <div className={style.game}>
-    Hello World
+    <Circle level={1} />
   </div>
 );
 
