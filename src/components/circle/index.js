@@ -1,15 +1,8 @@
 /** @jsx h */
 import { h } from 'preact';
+import { distribute } from '../../modules/shape';
 
 export const CIRCLE = 'CIRCLE';
-
-export const left = (x) => {
-  return x * 85 + 5;
-};
-
-export const top = (y) => {
-  return y * 85 + 5;
-};
 
 const graphic = (level) => {
   switch (level) {
@@ -48,7 +41,7 @@ const graphic = (level) => {
 };
 
 const Circle = ({ x = 1, y = 1, level = 0 }) => (
-  <div style={{ position: 'absolute', left: left(x), top: top(y) }}>
+  <div style={{ position: 'absolute', left: distribute(x, 85), top: distribute(y, 85) }}>
     <svg viewBox="0 0 100 100" style={{ width: '75px', height: '75px' }} xmlns="http://www.w3.org/2000/svg">
       { graphic(level) }
     </svg>
